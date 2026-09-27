@@ -4,6 +4,27 @@
 
 This project is a small Express/TypeScript API designed for a backend integration assessment. It features a mock messaging provider, webhook handling capabilities, and duplicate event protection. The API allows you to send templated messages and receive delivery status events via webhooks, simulating a real-world messaging service integration.
 
+## Project Structure
+
+```text
+valcura-assignment/
+├── scripts/
+│   └── verify.ts           # End-to-end verification script
+├── src/
+│   ├── provider/
+│   │   └── mockProvider.ts # Mock messaging provider implementation
+│   ├── routes/
+│   │   ├── sendTemplate.ts # POST /send-template route
+│   │   └── webhook.ts      # POST /webhooks/message route
+│   ├── config.ts           # Environment variables and config loading
+│   └── server.ts           # Express application setup and entry point
+├── .env.example            # Example environment variables
+├── .gitignore              # Git ignore file
+├── package.json            # NPM dependencies and scripts
+├── README.md               # Project documentation
+└── tsconfig.json           # TypeScript configuration
+```
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
